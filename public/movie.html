@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">MovieStream</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="my-library.html">My Library</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="movie-page">
+        <div class="movie-backdrop">
+            <div class="backdrop-overlay"></div>
+        </div>
+
+        <div class="movie-container">
+            <div class="movie-header">
+                <div class="movie-poster">
+                    <img id="movie-poster" src="" alt="Movie Poster">
+                    <div class="movie-poster-overlay">
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <h1 id="movie-title"></h1>
+                    <div class="movie-meta">
+                        <div class="meta-item" id="movie-year">
+                            <i class="fas fa-calendar"></i>
+                            <span class="meta-text">2023</span>
+                        </div>
+                        <div class="meta-item" id="movie-rating">
+                            <i class="fas fa-star"></i>
+                            <span class="meta-text">8.9/10</span>
+                        </div>
+                        <div class="meta-item" id="movie-genre">
+                            <i class="fas fa-film"></i>
+                            <span class="meta-text">Action, Drama</span>
+                        </div>
+                        <div class="meta-item" id="movie-views">
+                            <i class="fas fa-eye"></i>
+                            <span>1.2M views</span>
+                        </div>
+                    </div>
+                    <div class="movie-actions">
+                        <button class="add-to-library-btn" id="addToLibrary">
+                            <i class="fas fa-plus add-icon"></i>
+                            <i class="fas fa-check check-icon" style="display: none;"></i>
+                            <span class="button-text">Add to My Library</span>
+                        </button>
+                    </div>
+                    <div class="movie-description">
+                        <p id="movie-description">The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Related Movies Section -->
+        <div class="related-movies-section">
+            <div class="section-header">
+                <h2>Related Movies</h2>
+            </div>
+            <div class="related-movies-container">
+                <!-- Related movies will be dynamically added here -->
+            </div>
+        </div>
+
+        <!-- Recommended Movies Section -->
+        <div class="recommended-movies-section">
+            <div class="section-header">
+                <h2>Recommended for You</h2>
+            </div>
+            <div class="recommended-movies-container">
+                <!-- Recommended movies will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <script src="js/movie.js"></script>
+</body>
+</html> 

@@ -1,0 +1,233 @@
+/* Registration Section Styles */
+.register-section {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/register-bg.jpg') center/cover;
+    padding-top: 80px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+}
+
+.register-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-box h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.register-box p {
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group i {
+    position: absolute;
+    left: 1rem;
+    color: #cccccc;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #e50914;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Password Input Specific Styles */
+.input-group input[type="password"] {
+    letter-spacing: 0.2em;
+    font-size: 1.2rem;
+    color: #cccccc;
+    transition: color 0.3s ease;
+}
+
+.input-group input[type="password"]::placeholder {
+    letter-spacing: normal;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.form-options {
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.terms input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.terms a {
+    color: #e50914;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.terms a:hover {
+    color: #ff0f1f;
+}
+
+.register-btn {
+    background: #e50914;
+    color: #ffffff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background: #ff0f1f;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #cccccc;
+}
+
+.login-link a {
+    color: #e50914;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #ff0f1f;
+}
+
+/* Error Message Styles */
+.error-message {
+    background: rgba(229, 9, 20, 0.1);
+    border: 1px solid #e50914;
+    color: #e50914;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+
+/* Success Message Styles */
+.success-message {
+    background: rgba(0, 255, 0, 0.1);
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+
+/* Password Strength Indicator */
+.password-strength {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
+}
+
+.strength-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.strength-weak .strength-dot:nth-child(1) {
+    background: #ff4444;
+    box-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}
+
+.strength-medium .strength-dot:nth-child(1),
+.strength-medium .strength-dot:nth-child(2) {
+    background: #ffbb33;
+    box-shadow: 0 0 10px rgba(255, 187, 51, 0.5);
+}
+
+.strength-strong .strength-dot:nth-child(1),
+.strength-strong .strength-dot:nth-child(2),
+.strength-strong .strength-dot:nth-child(3) {
+    background: #00C851;
+    box-shadow: 0 0 10px rgba(0, 200, 81, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .register-container {
+        padding: 1rem;
+    }
+
+    .register-box {
+        padding: 1.5rem;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+} 

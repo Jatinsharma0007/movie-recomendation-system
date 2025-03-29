@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library - MovieStream</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">MovieStream</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="my-library.html">My Library</a></li>
+                <li><a href="categories.html">Categories</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="register.html" class="register-btn">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="library-page">
+        <div class="library-header">
+            <h1>My Library</h1>
+        </div>
+
+        <div class="library-container">
+            <div class="library-filters">
+                <div class="filter-group">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="date-added">Date Added</option>
+                        <option value="rating">Rating</option>
+                        <option value="title">Title</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filter-genre">Genre:</label>
+                    <select id="filter-genre">
+                        <option value="all">All Genres</option>
+                        <option value="action">Action</option>
+                        <option value="drama">Drama</option>
+                        <option value="comedy">Comedy</option>
+                        <option value="sci-fi">Sci-Fi</option>
+                        <option value="horror">Horror</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="library-grid">
+                <!-- Movies will be dynamically added here -->
+            </div>
+
+            <div class="empty-library" style="display: none;">
+                <i class="fas fa-film"></i>
+                <h2>Your library is empty</h2>
+                <p>Start adding movies to your watchlist to see them here</p>
+                <a href="movies.html" class="browse-movies-btn">Browse Movies</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/my-library.js"></script>
+</body>
+</html> 

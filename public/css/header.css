@@ -1,0 +1,106 @@
+/* Header Styles */
+header {
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.1);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #e50914;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo a:hover {
+    color: #ff0f1f;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e50914;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons a {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.login-btn {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.login-btn:hover,
+.login-btn.active {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e50914;
+}
+
+.register-btn {
+    background: #e50914;
+    color: #ffffff;
+}
+
+.register-btn:hover,
+.register-btn.active {
+    background: #ff0f1f;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .auth-buttons {
+        gap: 0.5rem;
+    }
+
+    .auth-buttons a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+} 
